@@ -60,7 +60,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          console.log(user.email);
+          console.log(user.email);  
 
         })
         .catch((error) => {
