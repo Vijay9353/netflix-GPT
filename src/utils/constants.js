@@ -20,9 +20,4 @@ export const SUPPORTED_LANGUAGES = [{ identifier: "en", name: "English" },
 { identifier: "hindi", name: "Hindi" },
 { identifier: "spanish", name: "Spanish" }];
 
-// go to https://platform.openai.com/api-keys  and create new secret key
-// export const OPENAI_KEY = "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";
-
-
-// You can get your key from Google AI Studio 
 export const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
