@@ -78,7 +78,7 @@ const Login = () => {
           alt='Logo' />
       </div>
       <form onSubmit={(e) => e.preventDefault()} className='w-5/12 absolute p-12 bg-black my-40 mx-auto right-2 left-0 text-amber-50 rounded-3xl opacity-89'>
-        <h1 className='font-bold text-3xl p-4'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
+        <h1 className='font-bold text-3xl p-4'>{isSignInForm ? "Sign in" : "Sign Up"}</h1>
         {!isSignInForm && <input type='text' placeholder='Full Name' className='p-2 ml-4 mr-2 mb-4 bg-gray-700' />}
         <input ref={email} type='text' placeholder='Email Address' className='p-2 ml-4 mr-2 mb-4 bg-gray-700' />
         <input ref={password} type='password' placeholder='Passward' className='p-2 ml-4 mr-2 bg-gray-700' />

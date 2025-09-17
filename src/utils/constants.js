@@ -1,6 +1,6 @@
 export const LOGO = "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2025-07-24/consent/87b6a5c0-0104-4e96-a291-092c11350111/019808e2-d1e7-7c0f-ad43-c485b7d9a221/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
 
-export const user_avatar = "https://media.licdn.com/dms/image/v2/D5635AQGLcZn9OLFF6A/profile-framedphoto-shrink_100_100/B56ZhtrIwdG0Ao-/0/1754186681712?e=1757948400&v=beta&t=76zpqVNco8mnjfKw857wRe02Tbnep4NLoWwdM8_m2-E";
+export const user_avatar = "https://avatars.githubusercontent.com/u/174478155?v=4";
 
 // take this options from tmdb->api reference
 export const API_OPTIONS = {
@@ -24,5 +24,5 @@ export const SUPPORTED_LANGUAGES = [{ identifier: "en", name: "English" },
 // export const OPENAI_KEY = "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";
 
 
-// You can get your key from Google AI Studio
+// You can get your key from Google AI Studio 
 export const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
