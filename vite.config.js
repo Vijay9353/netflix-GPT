@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    react()],
-    base: "/netflix-GPT/"
+    react()
+  ],
+  base: "./"   // ✅ this ensures assets load correctly on Firebase Hosting
 })

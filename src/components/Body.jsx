@@ -1,7 +1,8 @@
 import Login from './Login'
-import { Browse } from './Browse'
+import Browse from './Browse'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import ErrorPage from './ErrorPage'
 
 export const Body = () => {
 
@@ -10,11 +11,13 @@ export const Body = () => {
   const appRouter = createBrowserRouter([
     {
       path: "/",
-      element: <Login />
+      element: <Login />,
+      errorElement: <ErrorPage />
     },
     { 
       path: "/browse",
-      element: <Browse />
+      element: <Browse />,
+      // errorElement: <ErrorPage />
     }
   ]);
 

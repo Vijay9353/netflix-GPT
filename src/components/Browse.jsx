@@ -9,7 +9,7 @@ import useUpcomingMovies from '../hooks/useUpcomingMovies';
 import GptSearch from './GptSearch';
 import { useSelector } from 'react-redux';
 
-export const Browse = () => {
+export default function Browse () {
 
   const showGptSearch = useSelector(store => store.gpt.showGptSearch);
 

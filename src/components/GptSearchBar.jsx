@@ -53,7 +53,7 @@ import { useDispatch, useSelector } from "react-redux";
 import languages from "../utils/languageConstant";
 import genAI from "../utils/gemini"; // changed import
 import { API_OPTIONS } from "../utils/constants";
-import { addGptMovieResult} from "../utils/gptSlice";
+import { addGptMovieResult, setGptLoading } from "../utils/gptSlice";
 
 const GptSearchBar = () => {
   const dispatch = useDispatch();
@@ -70,6 +70,7 @@ const GptSearchBar = () => {
 
   const handleGptSearchClick = async () => {
     try {
+      dispatch(setGptLoading(true));
       console.log(searchText.current.value);
 
       const gptQuery =
@@ -99,12 +100,13 @@ const GptSearchBar = () => {
 
         // If any one fails → the whole Promise.all rejects with that error.
         const tmdbResults = await Promise.all(promiseArray);
-    
+
         console.log(tmdbResults);
         dispatch(addGptMovieResult({movieNames:gptmovies, movieResults: tmdbResults}));
         
     } catch (error) {
       console.error("Error calling Gemini API:", error);
+      dispatch(setGptLoading(false));
     }
   };
 
